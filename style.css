@@ -1,0 +1,138 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Finger+Paint&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #17252A;
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    background:#7BD3EA;
+    display: flex;
+    justify-content: center;
+    margin-top:  0px; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+    margin-top: 30px;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 5.5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box:hover{
+    background-color: #2B7A78;
+}
+
+.info{
+    font-size: 30px;
+}
+.gameInfo{
+    padding: 0 34px;
+}
+
+.gameInfo div{
+    margin: 34px;
+    padding: 75px;
+}
+
+.gameInfo h1{
+    margin-top: 60px;
+    font-size: 2.5 rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.imgbox img{
+    width: 0;
+    transition: width is ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+     margin: 0 23px;
+     padding: 1px 18px;
+     background: #AC3B61;
+     border-radius: 6px;
+     color: azure;
+     cursor: pointer;
+    font-size: 33px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.line{
+    background-color: rgb(7, 58, 78);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.footer{
+    font-size: 15px;
+    text-size-adjust: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(5, 14, 23);
+    background: #b0d8e6;
+}
+@media  screen and (max-width: 950px) 
+{
+    .gameContainer{
+        flex-wrap: wrap;
+
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }    
+    .gameInfo h1{
+        font-size: 1.5 rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
